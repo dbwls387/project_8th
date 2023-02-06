@@ -13,9 +13,9 @@
     "core-js": "^3.8.3",
     "sass": "^1.49.9",
     "swiper": "^8.0.7",
-    "v-calendar": "^2.4.1", 
     "vue": "^3.2.13",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
