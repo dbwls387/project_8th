@@ -66,7 +66,7 @@
                     </div>
                     <div class="btns">
                       <router-link to="/contact" class="e-btn e-btn-4" id="btncolor">학원 등록하기</router-link>
-                      <router-link to="/contact" class="e-btn e-btn-4 ml-30" id="btncolor"
+                      <router-link to="/register" class="e-btn e-btn-4 ml-30" id="btncolor"
                         >학부모 / 강사 가입하기</router-link
                       >
                     </div>

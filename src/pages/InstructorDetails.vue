@@ -6,7 +6,7 @@
 
 <script>
 import Header from '../components/HomeTwo/Header.vue';
-import InstructorDetailsArea from '../components/InstructorDetails/InstructorDetailsArea.vue';
+import InstructorDetailsArea from '../components/Teacher/InstructorDetailsArea.vue';
 import Footer from '../components/Home/Footer.vue';
 
 export default {
