@@ -1,21 +1,23 @@
 <template>
   <Header header__white="header__white" />
-  <TeacherInfoArea/>
-  <Footer footerPadding="true"/>
+  <TeacherInfoArea />
+  <CourseDetails />
+  <Footer footerPadding="true" />
 </template>
 
 <script>
-import Header from '../components/Home/Header.vue';
+import Header from "../components/Home/Header.vue";
 import TeacherInfoArea from "../components/Class/TeacherInfoArea.vue";
-import Footer from '../components/Home/Footer.vue';
+import CourseDetails from "../components/Class/CourseDetailsArea.vue";
+import Footer from "../components/Home/Footer.vue";
 
 export default {
-   name:'ClassInfo',
-   components:{
-      Header,
-      TeacherInfoArea,
-      Footer,
-   }
-}
+  name: "ClassInfo",
+  components: {
+    Header,
+    TeacherInfoArea,
+    CourseDetails,
+    Footer,
+  },
+};
 </script>
-

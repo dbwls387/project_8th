@@ -1,5 +1,5 @@
 <template>
-  <section class="teacher__area pt-100 pb-110">
+  <section class="teacher__area pt-100 pb-50">
     <div class="container">
       <div class="row">
         <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2">
@@ -32,8 +32,7 @@
           </table>
         </div>
 
-         <hr class="mt-30">
-
+        <hr class="mt-30" />
       </div>
     </div>
   </section>
