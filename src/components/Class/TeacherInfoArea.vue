@@ -16,10 +16,8 @@
                      <div>이메일 : educal@gmail.com</div>
                   </div>
                   <div class="teacher__info">
-                    <h4>과목</h4>
-                    <p>수학(과목)</p>
-                    <h4>학년</h4>
-                    <p>1학년</p>
+                    <div>과목 : 수학</div>
+                    <div>학년 : 1학년</div>
                   </div>
                </div>
             </div>
