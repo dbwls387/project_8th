@@ -15,38 +15,12 @@
                      <div>연락처 : 010-1234-5678</div>
                      <div>이메일 : educal@gmail.com</div>
                   </div>
-                  <div class="teacher__rating">
-                     <h5>Review:</h5>
-                     <div class="teacher__rating-inner d-flex align-items-center">
-                        <ul>
-                           <li><a href="#"> <i class="fas fa-star"></i> </a></li>
-                           <li><a href="#"> <i class="fas fa-star"></i> </a></li>
-                           <li><a href="#"> <i class="fas fa-star"></i> </a></li>
-                           <li><a href="#"> <i class="fas fa-star"></i> </a></li>
-                           <li><a href="#"> <i class="fas fa-star"></i> </a></li>
-                        </ul>
-                        <p>4.5</p>
-                     </div>
+                  <div class="teacher__info">
+                    <h4>과목</h4>
+                    <p>수학(과목)</p>
+                    <h4>학년</h4>
+                    <p>1학년</p>
                   </div>
-               </div>
-               <div class="teacher__bio">
-                  <h3>강사 소개</h3>
-                  <p>Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey guvnor in my flat, up the duff Eaton car boot up the kyver pardon you A bit of how's your father David skive off sloshed, don't get shirty with me chip shop vagabond crikey bugger Queen's English chap. Matie boy nancy boy bite your arm off up the kyver old no biggie fantastic boot, David have it show off show off pick your nose and blow off lost the plot porkies bits and bobs only a quid bugger all mate, absolutely bladdered bamboozled it's your round don't get shirty with me down the pub well.(강사 소개 내용)</p>
-               </div>
-               <div class="teacher__courses pt-55">
-                  <div class="section__title-wrapper mb-30">
-                     <h2 class="section__title">임채오 <span class="yellow-bg yellow-bg-big">수학학원<img src="../../assets/img/shape/yellow-bg.png" alt=""></span></h2>
-                  </div>
-                  <div>수학 1반(반) </div>
-                  <div>수학 3반(반) </div>
-                  <div>수학 4반(반) </div>
-                  <br>
-                  <div class="section__title-wrapper mb-30">
-                     <h2 class="section__title">임채오 <span class="yellow-bg yellow-bg-big">과학학원<img src="../../assets/img/shape/yellow-bg.png" alt=""></span></h2>
-                  </div>
-                  <div>과학 1반(반) </div>
-                  <div>과학 3반(반) </div>
-                  <div>과학 4반(반) </div>
                </div>
             </div>
          </div>
