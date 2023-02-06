@@ -43,31 +43,26 @@
                      <nav id="mobile-menu" class="d-none d-xl-block">
                         <ul>
                            <li class="has-dropdown">
-                              <router-link to="/master/classes">학원관리</router-link>
+                              <router-link to="/teacher/class/">반 관리</router-link>
                               <ul class="submenu">
+                                <!-- v-for로 학원/반 순서대로 출력, 가능하면 n개까지 스크롤까지 -->
                                  <li>
-                                    <router-link to="/master/classes">반 관리</router-link>
-                                 </li>
-                                 <li>
-                                    <router-link to="/master/teachers">강사 관리</router-link>
-                                 </li>
-                                 <li>
-                                    <router-link to="/master/students">원생 관리</router-link>
+                                    <router-link to="/teacher/class/">반 관리</router-link>
                                  </li>
                               </ul>
                            </li>
                            <li class="has-dropdown">
-                            <router-link to="/master/counsel">상담</router-link>
+                            <router-link to="/teacher/counsel">상담</router-link>
                               <ul class="submenu">
                                  <li>
-                                    <router-link to="/master/counsel">상담</router-link>
+                                    <router-link to="/teacher/counsel">상담</router-link>
                                  </li>
                               </ul>
                            </li>
                            <li class="has-dropdown">
-                            <router-link to="/master/schedule">스케줄</router-link>
+                            <router-link to="/teacher/schedule">스케줄</router-link>
                               <ul class="submenu">
-                                 <li><router-link to="/master/schedule">스케줄</router-link></li>
+                                 <li><router-link to="/teacher/schedule">스케줄</router-link></li>
                               </ul>
                            </li>
                         </ul>
