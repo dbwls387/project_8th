@@ -43,6 +43,7 @@ export default {
         '목요일',
         '금요일',
         '토요일',
+        
       ],
       dates: [],
       currentYear: 0,
