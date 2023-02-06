@@ -5,41 +5,52 @@
          <div class="col-xxl-7 col-xl-7 col-lg-6">
             <div class="contact__wrapper">
                <div class="section__title-wrapper mb-40">
-                  <h2 class="section__title">Get in<span class="yellow-bg yellow-bg-big">touch<img src="../../assets/img/shape/yellow-bg.png" alt=""></span></h2>
-                  <p>Have a question or just want to say hi? We'd love to hear from you.</p>
+                  <h2 class="section__title">학원등록<span class="yellow-bg yellow-bg-big"> 문의<img src="../../assets/img/shape/yellow-bg.png" alt=""></span></h2>
                </div>
                <div class="contact__form">
                   <form action="assets/mail.php">
                      <div class="row">
                         <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="contact__form-input">
-                              <input type="text" placeholder="Your Name" name="name">
+                              <input type="text" placeholder="이름" name="name">
                            </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="contact__form-input">
-                              <input type="email" placeholder="Your Email" name="email">
+                              <input type="email" placeholder="이메일" name="email">
                            </div>
                         </div>
-                        <div class="col-xxl-12">
+                        <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="contact__form-input">
-                              <input type="text" placeholder="Subject" name="subject">
+                              <input type="text" placeholder="원하는 아이디를 입력해주세요" name="ID">
                            </div>
                         </div>
-                        <div class="col-xxl-12">
+                        <div class="col-xxl-6 col-xl-6 col-md-6">
                            <div class="contact__form-input">
-                              <textarea placeholder="Enter Your Message" name="message"></textarea>
+                              <input type="text" placeholder="학원 이름을 입력해주세요" name="academyName">
                            </div>
                         </div>
-                        <div class="col-xxl-12">
-                           <div class="contact__form-agree  d-flex align-items-center mb-20">
-                              <input class="e-check-input" type="checkbox" id="e-agree">
-                              <label class="e-check-label" for="e-agree">I agree to the<a href="#">Terms & Conditions</a></label>
+                        <div class="col-xxl-6 col-xl-6 col-md-6">
+                           <div class="contact__form-input">
+                              <input type="text" placeholder="우편번호" name="zipCode">
+                           </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-md-6">
+                           <button>우편번호 찾기</button>
+                        </div>
+                        <div class="col-xxl-12 col-xl-12 col-md-6">
+                           <div class="contact__form-input">
+                              <input type="text" placeholder="기본주소" name="firstAddress">
+                           </div>
+                        </div>
+                        <div class="col-xxl-12 col-xl-12 col-md-6">
+                           <div class="contact__form-input">
+                              <input type="text" placeholder="상세주소" name="lastAddress">
                            </div>
                         </div>
                         <div class="col-xxl-12">
                            <div class="contact__btn">
-                              <button type="submit" class="e-btn">Send your message</button>
+                              <button type="submit" class="e-btn">문의 보내기</button>
                            </div>
                         </div>
                      </div>

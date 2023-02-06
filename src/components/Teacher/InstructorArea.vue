@@ -21,7 +21,8 @@
                </div>
                <div class="teacher__content">
                   <h3 class="teacher__title">{{instructor.name}}</h3> 
-                  <span> {{instructor.title}}</span>
+                  <span> {{instructor.title}} </span>
+                  <button class="delete-teacher-btn"> 삭제 </button>
                </div>
             </div>
          </div>
@@ -77,3 +78,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+   .delete-teacher-btn {
+      margin-left: 2rem;
+      border: 1px solid;
+   }
+</style>
