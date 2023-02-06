@@ -22,6 +22,7 @@ import ErrorPage from '../pages/ErrorPage.vue';
 import Contact from '../pages/Contact.vue';
 import CourseDetailsPage from '../pages/DynamicCourseDetails.vue';
 import DynamicBlogDetails from '../pages/DynamicBlogDetails.vue';
+import ClassInfo from "../pages/ClassInfo.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -145,6 +146,10 @@ const router = createRouter({
             path:'/student-details',
             name:'student-details',
             component:StudentDetail,
+        },
+        { 
+            path:'/teacher/class',
+            component:ClassInfo,
         }
     ]
 })

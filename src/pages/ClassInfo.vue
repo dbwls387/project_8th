@@ -1,20 +1,21 @@
 <template>
   <Header header__white="header__white" />
-  <ContactArea/>
+  <TeacherInfoArea/>
   <Footer footerPadding="true"/>
 </template>
 
 <script>
 import Header from '../components/Home/Header.vue';
-import ContactArea from '../components/Contact/ContactArea.vue';
+import TeacherInfoArea from "../components/Class/TeacherInfoArea.vue";
 import Footer from '../components/Home/Footer.vue';
 
 export default {
-   name:'ContactPage',
+   name:'ClassInfo',
    components:{
-		Header,
-      ContactArea,
+      Header,
+      TeacherInfoArea,
       Footer,
-	}
+   }
 }
 </script>
+
