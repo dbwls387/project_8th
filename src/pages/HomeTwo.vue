@@ -21,7 +21,7 @@ import AboutArea from '../components/common/AboutArea.vue';
 import Courses from '../components/Home/Course.vue';
 import WhatArea from '../components/HomeTwo/WhatArea.vue';
 import WhyArea from '../components/HomeTwo/WhyArea.vue';
-import Counter from '../components/HomeTwo/Counter.vue';
+import Counter from '../components/Home/Counter.vue';
 import Testimonial from '../components/HomeTwo/Testimonial.vue';
 import Blog from '../components/HomeTwo/Blog.vue';
 import Footer from '../components/Home/Footer.vue';

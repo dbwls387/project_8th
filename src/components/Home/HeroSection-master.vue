@@ -7,8 +7,8 @@
                <div class="hero__content p-relative z-index-1">
                   <h3 class="hero__title font">
                      <span></span>
-                     <span class="yellow-shape">학부모<img src="../../assets/img/shape/yellow-bg.png" alt="yellow-shape"> </span>를 위한</h3>
-                     <p class="mt-30">Educal은 출결과 성적 등 아이의 학원생활을 쉽게 알 수 있게 해줍니다. </p>
+                     <span class="yellow-shape">학원장<img src="../../assets/img/shape/yellow-bg.png" alt="yellow-shape"> </span>를 위한</h3>
+                     <p class="mt-30">Educal으로 학생 수 관계없이 재원, 퇴원생을 손 쉽게 관리할 수 있습니다. </p>
                </div>
             </div>
          </div>

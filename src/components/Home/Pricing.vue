@@ -1,133 +1,107 @@
 <template>
- <section class="price__area pt-60 pb-130">
-   <div class="container">
+  <section class="price__area pt-100 pb-130">
+    <div class="container">
       <div class="row">
-         <div class="col-xxl-4 offset-xxl-4">
-            <div class="section__title-wrapper mb-60 text-center">
-               <h2 class="section__title">Simple <br> All Inclusive  <span class="yellow-bg yellow-bg-big">Pricing<img src="../../assets/img/shape/yellow-bg.png" alt=""></span></h2>
-               <p>No contracts. No surprise fees.</p>
-            </div>
-         </div>
+        <div class="col-xxl-4 offset-xxl-4">
+          <div class="section__title-wrapper mb-50 text-center">
+            <h2 class="section__title">
+              지금
+              <span class="yellow-bg yellow-bg-big"
+                >가입<img src="../../assets/img/shape/yellow-bg.png" alt=""
+              /></span>
+              하세요!
+            </h2>
+          </div>
+        </div>
       </div>
       <div class="row">
-         <div class="col-xxl-12">
-            <div class="price__tab-btn text-center mb-50">
-               <nav>
-                  <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                     <button class="nav-link" id="nav-monthly-tab" data-bs-toggle="tab" data-bs-target="#nav-monthly" type="button" role="tab" aria-controls="nav-monthly" aria-selected="true">monthly plan</button>
-                     <button class="nav-link active" id="nav-annually-tab" data-bs-toggle="tab" data-bs-target="#nav-annually" type="button" role="tab" aria-controls="nav-annually" aria-selected="false">Annual Plan</button>
+        <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+          <div class="price__tab-content">
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-annually"
+                role="tabpanel"
+                aria-labelledby="nav-annually-tab"
+              >
+                <div class="row">
+                  <div class="price__item grey-bg mb-30 p-relative">
+                    <div class="price__head">
+                      <h3>학부모</h3>
+                    </div>
+                    <div class="price__features mb-40">
+                      <ul>
+                        <li>
+                          <i class="far fa-check"></i>포트폴리오 화면 공유를 통한 1:1 비대면 화상
+                          상담 서비스
+                        </li>
+                        <li><i class="far fa-check"></i>학생 출결, 성적 관리</li>
+                      </ul>
+                    </div>
+
+                     <div class="price__head">
+                      <h3>강사</h3>
+                    </div>
+                    <div class="price__features mb-40">
+                      <ul>
+                        <li>
+                          <i class="far fa-check"></i>포트폴리오 화면 공유를 통한 1:1 비대면 화상
+                          상담 서비스
+                        </li>
+                        <li><i class="far fa-check"></i>원생 포트폴리오 관리</li>
+                      </ul>
+                    </div>
+
+                     <div class="price__head">
+                      <h3>학원장</h3>
+                    </div>
+                    <div class="price__features mb-40">
+                      <ul>
+                        <li>
+                          <i class="far fa-check"></i>포트폴리오 화면 공유를 통한 1:1 비대면 화상
+                          상담 서비스
+                        </li>
+                        <li><i class="far fa-check"></i>편리한 원생 관리</li>
+                      </ul>
+                    </div>
+                    <div class="btns">
+                      <router-link to="/contact" class="e-btn e-btn-4" id="btncolor">학원 등록하기</router-link>
+                      <router-link to="/contact" class="e-btn e-btn-4 ml-30" id="btncolor"
+                        >학부모 / 강사 가입하기</router-link
+                      >
+                    </div>
                   </div>
-                  </nav>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-         <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
-            <div class="price__tab-content">
-               <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade" id="nav-monthly" role="tabpanel" aria-labelledby="nav-monthly-tab">
-                     <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                           <div class="price__item grey-bg mb-30 p-relative">
-                              <div class="price__head">
-                                 <h3>Gold</h3>
-                                 <p>Perfect for small marketing teams</p>
-                              </div>
-                              <div class="price__tag mb-25">
-                                 <h4>$49<span>.99 / annually</span></h4>
-                              </div>
-                              <div class="price__features mb-40">
-                                 <ul>
-                                    <li><i class="far fa-check"></i>Course Discussions</li>
-                                    <li><i class="far fa-check"></i>Content Library</li>
-                                    <li><i class="far fa-check"></i>1-hour Mentorship</li>
-                                 </ul>
-                              </div>
-                              <router-link to="/contact" class="e-btn e-btn-4">Get Started</router-link>
-                           </div>
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                           <div class="price__item grey-bg mb-30 p-relative">
-                              <div class="price__offer">
-                                 <span>Best Value</span>
-                              </div>
-                              <div class="price__head">
-                                 <h3>Diamond</h3>
-                                 <p>Perfect for small marketing teams</p>
-                              </div>
-                              <div class="price__tag mb-25">
-                                 <h4>$68<span>.99 / annually</span></h4>
-                              </div>
-                              <div class="price__features mb-40">
-                                 <ul>
-                                    <li><i class="far fa-check"></i>Course Discussions</li>
-                                    <li><i class="far fa-check"></i>Content Library</li>
-                                    <li><i class="far fa-check"></i>1-hour Mentorship</li>
-                                    <li><i class="far fa-check"></i>Online Course</li>
-                                 </ul>
-                              </div>
-                              <router-link to="/contact" class="e-btn e-btn-border">Get Started</router-link>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  
-                  <div class="tab-pane fade show active" id="nav-annually" role="tabpanel" aria-labelledby="nav-annually-tab">
-                     <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                           <div class="price__item grey-bg mb-30 p-relative">
-                              <div class="price__head">
-                                 <h3>Gold</h3>
-                                 <p>Perfect for small marketing teams</p>
-                              </div>
-                              <div class="price__tag mb-25">
-                                 <h4>$68<span>.99 / annually</span></h4>
-                              </div>
-                              <div class="price__features mb-40">
-                                 <ul>
-                                    <li><i class="far fa-check"></i>Course Discussions</li>
-                                    <li><i class="far fa-check"></i>Content Library</li>
-                                    <li><i class="far fa-check"></i>1-hour Mentorship</li>
-                                 </ul>
-                              </div>
-                              <router-link to="/contact" class="e-btn e-btn-4">Get Started</router-link>
-                           </div>
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                           <div class="price__item grey-bg mb-30 p-relative">
-                              <div class="price__offer">
-                                 <span>Best Value</span>
-                              </div>
-                              <div class="price__head">
-                                 <h3>Diamond</h3>
-                                 <p>Perfect for small marketing teams</p>
-                              </div>
-                              <div class="price__tag mb-25">
-                                 <h4>$99<span>.99 / annually</span></h4>
-                              </div>
-                              <div class="price__features mb-40">
-                                 <ul>
-                                    <li><i class="far fa-check"></i>Course Discussions</li>
-                                    <li><i class="far fa-check"></i>Content Library</li>
-                                    <li><i class="far fa-check"></i>1-hour Mentorship</li>
-                                    <li><i class="far fa-check"></i>Online Course</li>
-                                 </ul>
-                              </div>
-                              <router-link to="/contact" class="e-btn e-btn-border">Get Started</router-link>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-   name:'PricingArea'
+  name: "PricingArea",
 };
 </script>
+
+<style scoped>
+   .btns {
+      display: flex;
+      justify-content: center;
+   }
+
+   #btncolor {
+      background-color: rgba(255, 255, 255, 0);
+      color: black;
+      border-color: #0E1133;
+      font-weight: 600;
+   }
+
+   #btncolor:hover {
+      background-color: #0E1133;
+      color: white;
+   }
+</style>

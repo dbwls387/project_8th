@@ -17,7 +17,7 @@ import Header from '../components/HomeThree/Header.vue';
 import HeroSlider from '../components/HomeThree/HeroSlider.vue';
 import About from '../components/common/AboutArea.vue';
 import Brand from '../components/common/BrandArea.vue';
-import Course from '../components/HomeThree/Courses.vue';
+import Course from '../components/Home/Courses.vue';
 import Teachers from '../components/HomeThree/Teachers.vue';
 import Cta from '../components/HomeThree/Cta.vue';
 import Testimonial from '../components/HomeThree/Testimonial.vue';

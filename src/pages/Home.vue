@@ -1,10 +1,8 @@
  <template>
     <Header/>
     <HeroSection/>
-    <CategoryArea/>
-    <BannerArea/>
-    <Course/>
-    <Events/>
+    <HeroSection_teacher/>
+    <HeroSection_master/>
     <Pricing/>
     <Footer footerPadding="true"/>
  </template>
@@ -12,10 +10,8 @@
  <script>
 import Header from '../components/Home/Header.vue';
 import HeroSection from '../components/Home/HeroSection.vue';
-import CategoryArea from '../components/Home/CategoryArea.vue';
-import BannerArea from '../components/Home/BannerArea.vue';
-import Course from '../components/Home/Course.vue';
-import Events from '../components/Home/Events.vue';
+import HeroSection_teacher from '../components/Home/HeroSection-teacher.vue';
+import HeroSection_master from '../components/Home/HeroSection-master.vue';
 import Pricing from '../components/Home/Pricing.vue';
 import Footer from '../components/Home/Footer.vue';
 
@@ -24,10 +20,8 @@ import Footer from '../components/Home/Footer.vue';
      components:{
          Header,
          HeroSection,
-         CategoryArea,
-         BannerArea,
-         Course,
-         Events,
+         HeroSection_teacher, 
+         HeroSection_master,
          Pricing,
          Footer,
      }

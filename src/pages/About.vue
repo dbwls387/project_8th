@@ -17,7 +17,7 @@ import AboutArea from '../components/common/AboutArea.vue';
 import BrandArea from '../components/common/BrandArea.vue';
 import Testimonial from '../components/HomeThree/Testimonial.vue';
 import WhyArea from '../components/HomeTwo/WhyArea.vue';
-import CounterArea from '../components/HomeTwo/Counter.vue';
+import CounterArea from '../components/Home/Counter.vue';
 import BannerArea from '../components/Home/BannerArea.vue';
 import Footer from '../components/Home/Footer.vue';
 
