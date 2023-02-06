@@ -30,18 +30,18 @@
                   </div>
                </div>
                <div class="sign__form">
-                  <form action="#">
+                  <form @submit.prevent="login">>
                      <div class="sign__input-wrapper mb-25">
                         <h5>아이디</h5>
                         <div class="sign__input">
-                           <input type="text" placeholder="ID">
+                           <input type="text" placeholder="ID" v-model="id">
                            <i class="fal fa-envelope"></i>
                         </div>
                      </div>
                      <div class="sign__input-wrapper mb-10">
                         <h5>비밀번호</h5>
                         <div class="sign__input">
-                           <input type="text" placeholder="Password">
+                           <input type="password" placeholder="Password" v-model="password">
                            <i class="fal fa-lock"></i>
                         </div>
                      </div>
@@ -64,8 +64,112 @@
 </template>
 
 <script>
-export default {
-   name:'LoginArea'
-};
+import { defineComponent, ref } from 'vue'
+import { useStore } from "vuex";
+import { useRouter } from 'vue-router'
+import jwt_decode from 'jwt-decode'
+import axios from 'axios'
+
+export default defineComponent({
+  name: 'LoginArea',
+  setup() {
+    const store = useStore()
+    const id = ref('')
+    const password = ref('')
+    const error = ref('')
+    const router = useRouter()
+    const regex_id = /^[a-z|A-Z|0-9|]{5,20}$/
+    const regex_pwd = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%#?&])[A-Za-z\d$@$!*%#?&]{9,16}$/
+
+    // Login 기능
+    const login = async () => {
+
+      // 로그인 오류 체크
+      error.value = ''
+      if (!id.value) {
+        error.value = 'id'
+        return
+      }
+      if (!password.value) {
+        error.value = 'password'
+        return
+      }
+      if (!regex_id.test(id.value) || !regex_pwd.test(password.value)) {
+        error.value = 'validation'
+        return
+      }
+
+      // 첫번째 axios
+      axios ({
+        method: 'post',
+        url: `${store.state.API_URL}/api/v1/users/login`,
+        data: {
+          userId: id.value,
+          password: password.value,
+        }
+      })
+
+      // 첫번째 axios의 then(res)
+      .then((res) => {
+         console.log('첫번째성공')
+        // 두번째 axios 시작
+        axios({
+          method: 'post',
+          url: `${store.state.API_URL}/api/v1/users/find-seq`,
+          data: {
+            userId: jwt_decode(res.data.accessToken).sub
+          }
+        })
+
+        // 두번째 axios의 then(response)
+        .then((response) => {
+          console.log('두번째 성공')
+          // 세번째 axios 시작
+          axios({
+            method: 'get',
+            url: `${store.state.API_URL}/api/v1/users/${response.data.userSeq}`
+          })
+
+          // 세번째 axios의 대답 then(respond)
+          .then((respond) => {
+            const payload = {
+              token: res.data.accessToken,
+              userSeq: response.data.userSeq,
+              profile: respond.data
+            }
+
+            // 로그인 시 store에 token, userSeq, profile 저장
+            store.dispatch('login', payload)
+            if (response.data.userCode === 'UM') {
+              router.push({ name : '/'})
+            } else if (response.data.userCode === 'UT') {
+              router.push({ name : '/' })
+            } else if (response.data.userCode === 'UP') {
+              router.push({ name : '/' })
+            }
+          })
+        })
+
+        // 두번째 axios의 error
+        .catch ((err) => {
+          console.log(err)
+          return
+        })
+      })
+
+      // 첫번째 axios의 error
+      .catch (() => {
+        error.value = 'validation'
+      })
+    }
+    return {
+      id,
+      password,
+      error,
+      login
+    }
+  }
+})
+
 </script>
 
