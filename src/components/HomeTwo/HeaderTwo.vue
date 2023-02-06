@@ -46,8 +46,8 @@
                               <router-link to="/teacher/class/">반 관리</router-link>
                               <ul class="submenu">
                                 <!-- v-for로 학원/반 순서대로 출력, 가능하면 n개까지 스크롤까지 -->
-                                 <li>
-                                    <router-link to="/teacher/class/">반 관리</router-link>
+                                 <li v-for="clas of classes" :key="clas">
+                                    <router-link :to="{ name: 'teacher-class', params: {class_id: clas.clas_id} }">{{clas.academy_name}}&nbsp;{{class_name}}</router-link>
                                  </li>
                               </ul>
                            </li>
@@ -90,7 +90,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onBeforeMount } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
@@ -100,11 +100,30 @@ export default {
       const isSticky = ref('false')
       const store = useStore()
       const router = useRouter()
-
+      const classes = ref([])
       function logout() {
          store.commit('CLEAR_LOCAL')
          router.push({ name : 'home' })
       }
+
+      function getClasses() {
+      if (store.state.profile.userCode === 'UT' && store.state.classes === []) {
+        axios({
+          method: 'get',
+          url: `${store.state.API_URL}/api/v1/teachers/${store.state.myseq}/info`,
+          headers: {
+            Authorization: `Bearer ${store.state.token}`
+          }
+        })
+        .then((res) => {
+          classes.value = res.data.list
+          store.dispatch('saveClasses', classes)
+        })
+      }
+    }
+    onBeforeMount(() => {
+      getClasses()
+    })
       return {
          isSticky,
          logout

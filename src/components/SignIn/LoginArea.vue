@@ -30,7 +30,7 @@
                   </div>
                </div>
                <div class="sign__form">
-                  <form @submit.prevent="login">>
+                  <form @submit.prevent="login">
                      <div class="sign__input-wrapper mb-25">
                         <h5>아이디</h5>
                         <div class="sign__input">

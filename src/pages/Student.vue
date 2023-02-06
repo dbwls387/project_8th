@@ -1,16 +1,14 @@
 <template>
  <Header header__white="header__white" />
- <Breadcrumb title="Instructor" subtitle="Instructor" />
+ <Breadcrumb title="Student" subtitle="Student" />
  <StudentArea/>
- <BannerArea/>
  <Footer footerPadding="true" />
 </template>
 
 <script>
-import Header from '../components/Home/Header.vue';
+import Header from '../components/HomeTwo/Header.vue';
 import Breadcrumb from '../components/common/Breadcrumb.vue';
 import StudentArea from '../components/Student/StudentArea.vue';
-import BannerArea from '../components/Home/BannerArea.vue';
 import Footer from '../components/Home/Footer.vue';
 
 export default {
@@ -19,7 +17,6 @@ export default {
       Header,
       Breadcrumb,
       StudentArea,
-      BannerArea,
       Footer
    }
 };

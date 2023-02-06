@@ -121,7 +121,7 @@ export default {
   },
   methods:{
       handleSticky () {
-          if(window.scrollY > 80){
+          if(window.scrollY >= 80){
              this.isSticky = true;
           }
           else{
