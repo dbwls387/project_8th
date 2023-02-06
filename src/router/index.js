@@ -11,6 +11,8 @@ import BlogDetails from '../pages/BlogDetails.vue';
 import About from '../pages/About.vue';
 import Instructor from '../pages/Instructor.vue';
 import InstructorDetails from '../pages/InstructorDetails.vue';
+import Student from '../pages/Student.vue';
+import StudentDetail from '../pages/StudentDetail.vue'
 import EventDetails from '../pages/EventDetails.vue';
 import Cart from '../pages/Cart.vue';
 import Checkout from '../pages/Checkout.vue';
@@ -112,6 +114,14 @@ const router = createRouter({
             path:'/blog-details/:id',
             component:DynamicBlogDetails,
         },
+        {
+            path:'/student',
+            component:Student,
+        },
+        {
+            path:'/student-details',
+            component:StudentDetail,
+        }
     ]
 })
 
