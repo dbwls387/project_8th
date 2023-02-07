@@ -34,6 +34,7 @@
                </div>
                <div class="teacher__bio">
                   <h1>출석</h1>
+                  <CalendarAttendancyArea/>
                   <template>
                     <b-row>
                         <b-col md="auto">
@@ -71,10 +72,12 @@
 
 <script>
 import CourseMixin from '../../mixins/courseItemsMixin';
+import CalendarAttendancyArea from "../Calendar/CalendarAttendancyArea.vue";
 
 export default {
    name:'StudentDetail',
    mixins:[CourseMixin],
+   components: { CalendarAttendancyArea }
 };
 </script>
 
