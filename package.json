@@ -16,6 +16,7 @@
     "sass": "^1.49.9",
     "swiper": "^8.0.7",
     "vue": "^3.2.13",
+    "vue-cal": "^4.8.1",
     "vue-persistedstate": "^1.2.5",
     "vue-router": "^4.0.14",
     "vuex": "^4.1.0",
