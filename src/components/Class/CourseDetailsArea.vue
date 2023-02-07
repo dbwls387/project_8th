@@ -89,86 +89,85 @@
                   aria-labelledby="description-tab"
                 >
                   <div class="course__description">
+                    <div>
+                      <div class="dateTable">
+                        <DatePickerArea />
+                      </div>
+                      <table class="table table-bordered dateTable" align="center">
+                        <thead>
+                          <tr align="center">
+                            <th width="15%">이름</th>
+                            <th width="60%">출결사항</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr align="center">
+                            <td>김싸피</td>
+                            <td>
+                              <div>
+                                <div class="form-check form-check-inline attendancyCheck">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault1"
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    출석
+                                  </label>
+                                </div>
+                                <div class="form-check form-check-inline attendancyCheck">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault2"
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault2">
+                                    결석
+                                  </label>
+                                </div>
+                                <div class="form-check form-check-inline attendancyCheck">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault3"
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault3">
+                                    지각
+                                  </label>
+                                </div>
+                                <div class="form-check form-check-inline attendancyCheck">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault4"
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault4">
+                                    조퇴
+                                  </label>
+                                </div>
+                                <div class="form-check form-check-inline attendancyCheck">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault5"
+                                  />
+                                  <label class="form-check-label" for="flexRadioDefault5">
+                                    외출
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                     <button class="register">등록</button>
-                    <table class="table table-bordered" align="center">
-                      <thead>
-                        <tr align="center">
-                          <th width="25%">일시</th>
-                          <th width="15%">이름</th>
-                          <th width="60%">출결사항</th>
-                        </tr>
-                      </thead>
-
-                      <tbody>
-                        <tr align="center">
-                          <td>
-                            <DatePickerArea />
-                          </td>
-
-                          <td>김싸피</td>
-
-                          <td>
-                            <div>
-                              <div class="form-check form-check-inline attendancyCheck">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
-                                />
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  출석
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline attendancyCheck">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault2"
-                                />
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                  결석
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline attendancyCheck">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault3"
-                                />
-                                <label class="form-check-label" for="flexRadioDefault3">
-                                  지각
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline attendancyCheck">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault4"
-                                />
-                                <label class="form-check-label" for="flexRadioDefault4">
-                                  조퇴
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline attendancyCheck">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault5"
-                                />
-                                <label class="form-check-label" for="flexRadioDefault5">
-                                  외출
-                                </label>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
                 </div>
 
@@ -217,7 +216,7 @@ export default {
 
 <style scoped>
 .register {
-  width: 50px;
+  width: 55px;
   height: 35px;
   float: right;
   margin-bottom: 15px;
@@ -227,5 +226,11 @@ export default {
 }
 .attendancyCheck {
   width: 13%;
+}
+.tableScroll {
+  overflow-y: scroll;
+}
+.dateTable {
+  float: left;
 }
 </style>
