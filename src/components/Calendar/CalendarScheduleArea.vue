@@ -1,26 +1,26 @@
 <template>
-    <vue-cal
-        class="vuecal--date-picker"
-        xsmall
-        hide-view-selector
-        :time="false"
-        :transitions="false"
-        active-view="month"
-        :disable-views="['week']"
-        @cell-click="handleDayClick"
-        >
-    </vue-cal>
-    <vue-cal
-        class="vuecal--scheduler"
-        v-bind:selected-date="selectedDate"
-        :time-from="8 * 60"
-        :time-to="23 * 60"
-        :disable-views="['years', 'year', 'month', 'week']"
-        hide-weekends
-        editable-events
-        resize-x
-        :events="events">
-    </vue-cal>
+        <vue-cal
+            class="vuecal--date-picker"
+            xsmall
+            hide-view-selector
+            :time="false"
+            :transitions="false"
+            active-view="month"
+            :disable-views="['week']"
+            @cell-click="handleDayClick"
+            >
+        </vue-cal>
+        <vue-cal
+            class="vuecal--scheduler"
+            v-bind:selected-date="selectedDate"
+            :time-from="9 * 60"
+            :time-to="21 * 60"
+            :disable-views="['years', 'year', 'month', 'week']"
+            hide-weekends
+            editable-events
+            resize-x
+            :events="events">
+        </vue-cal>
 </template>
 
 <script>
@@ -75,3 +75,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.vuecal--date-picker {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.vuecal--scheduler {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+</style>
