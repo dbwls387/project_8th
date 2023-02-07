@@ -26,6 +26,7 @@ import ClassInfo from "../pages/ClassInfo.vue";
 import ParentMeeting from "../pages/ParentMeeting.vue";
 import TeacherSchedule from "../pages/TeacherSchedule.vue";
 import ApplyCounsel from "../pages/ApplyCounsel.vue";
+import MeetingSession from "../pages/MeetingSession.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -166,6 +167,10 @@ const router = createRouter({
         path: "/parent/apply-counsel",
         name: "ApplyCounselPage",
         component: ApplyCounsel,
+      },
+      {
+        path: "/meeting/session",
+        component: MeetingSession,
       }
   ]
 })
