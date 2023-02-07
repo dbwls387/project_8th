@@ -12,6 +12,7 @@
         >
     </vue-cal>
     <vue-cal
+        class="vuecal--scheduler"
         v-bind:selected-date="selectedDate"
         :time-from="8 * 60"
         :time-to="23 * 60"
