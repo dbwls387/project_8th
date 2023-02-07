@@ -15,5 +15,7 @@ export default {
 
 
 <style scoped>
-
+.vuecal--date-picker {
+    width: 30rem !important;
+}
 </style>

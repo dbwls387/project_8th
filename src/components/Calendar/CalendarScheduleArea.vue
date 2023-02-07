@@ -7,7 +7,6 @@
         :transitions="false"
         active-view="month"
         :disable-views="['week']"
-        style="width: 210px;height: 230px"
         @cell-click="handleDayClick"
         >
     </vue-cal>
