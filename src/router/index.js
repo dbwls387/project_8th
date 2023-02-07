@@ -25,6 +25,7 @@ import DynamicBlogDetails from "../pages/DynamicBlogDetails.vue";
 import ClassInfo from "../pages/ClassInfo.vue";
 import ParentMeeting from "../pages/ParentMeeting.vue";
 import TeacherSchedule from "../pages/TeacherSchedule.vue";
+import ApplyCounsel from "../pages/ApplyCounsel.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -160,6 +161,11 @@ const router = createRouter({
       {
         path: "/teacher/schedule",
         component: TeacherSchedule,
+      },
+      {
+        path: "/parent/apply-counsel",
+        name: "ApplyCounselPage",
+        component: ApplyCounsel,
       }
   ]
 })
