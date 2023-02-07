@@ -1,5 +1,5 @@
 <template>
-  <section class="teacher__area pt-100 pb-110" :style="{ marginTop: isSticky ? '0' : '90px' }">
+  <section class="teacher__area pt-100 pb-110">
     <div class="container">
       <div class="row">
 <!-- <<<<<<< Updated upstream

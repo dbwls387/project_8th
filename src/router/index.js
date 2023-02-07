@@ -92,7 +92,7 @@ const router = createRouter({
           component:Instructor,
       },
       {
-          path:'/teacher-details',
+          path:'/teacher-details/:userSeq',
           name:'teacher-details',
           component:InstructorDetails,
       },
