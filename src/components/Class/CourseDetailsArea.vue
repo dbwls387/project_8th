@@ -78,6 +78,8 @@
                 </li>
               </ul>
             </div>
+
+            <!-- 출결 시작 -->
             <div class="course__tab-content mb-95">
               <div class="tab-content" id="courseTabContent">
                 <div
@@ -87,17 +89,86 @@
                   aria-labelledby="description-tab"
                 >
                   <div class="course__description">
-                    <h3>출결</h3>
-                    <p>
-                      Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
-                      guvnor in my flat, up the duff Eaton car boot up the kyver pardon you A bit of
-                      how's your father David skive off sloshed, don't get shirty with me chip shop
-                      vagabond crikey bugger Queen's English chap. Matie boy nancy boy bite your arm
-                      off up the kyver old no biggie fantastic boot, David have it show off show off
-                      pick your nose and blow off lost the plot porkies bits and bobs only a quid
-                      bugger all mate, absolutely bladdered bamboozled it's your round don't get
-                      shirty with me down the pub well.
-                    </p>
+                    <button class="register">등록</button>
+                    <table class="table table-bordered" align="center">
+                      <thead>
+                        <tr align="center">
+                          <th width="25%">일시</th>
+                          <th width="15%">이름</th>
+                          <th width="60%">출결사항</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr align="center">
+                          <td>
+                            <DatePickerArea />
+                          </td>
+
+                          <td>김싸피</td>
+
+                          <td>
+                            <div>
+                              <div class="form-check form-check-inline attendancyCheck">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault1"
+                                />
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  출석
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline attendancyCheck">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault2"
+                                />
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  결석
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline attendancyCheck">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault3"
+                                />
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                  지각
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline attendancyCheck">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault4"
+                                />
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                  조퇴
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline attendancyCheck">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="flexRadioDefault"
+                                  id="flexRadioDefault5"
+                                />
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                  외출
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
 
@@ -130,6 +201,7 @@ import ClassProgressArea from "./ClassProgressArea.vue";
 import RegisterTestInfoArea from "./RegisterTestInfoArea.vue";
 import TestInfoListArea from "./TestInfoListArea.vue";
 import StudentArea from "./StudentArea.vue";
+import DatePickerArea from "../Calendar/DatePickerArea.vue";
 
 export default {
   name: "CourseDetailsArea",
@@ -138,6 +210,22 @@ export default {
     RegisterTestInfoArea,
     TestInfoListArea,
     StudentArea,
+    DatePickerArea,
   },
 };
 </script>
+
+<style scoped>
+.register {
+  width: 50px;
+  height: 35px;
+  float: right;
+  margin-bottom: 15px;
+  border-radius: 8%;
+  background-color: #0e1133;
+  color: white;
+}
+.attendancyCheck {
+  width: 13%;
+}
+</style>
