@@ -140,13 +140,7 @@ export default defineComponent({
 
             // 로그인 시 store에 token, userSeq, profile 저장
             store.dispatch('login', payload)
-            if (response.data.userCode === 'UM') {
-              router.push({ name : 'student-details'})
-            } else if (response.data.userCode === 'UT') {
-              router.push({ name : 'student-details' })
-            } else if (response.data.userCode === 'UP') {
-              router.push({ name : 'student-details' })
-            }
+            router.push({ name : 'home' })
           })
         })
 

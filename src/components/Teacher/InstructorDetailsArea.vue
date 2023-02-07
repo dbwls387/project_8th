@@ -1,5 +1,5 @@
 <template>
-  <section class="teacher__area pt-100 pb-110">
+  <section class="teacher__area pt-100 pb-110" :style="{ marginTop: isSticky ? '0' : '90px' }">
     <div class="container">
       <div class="row">
 <!-- <<<<<<< Updated upstream
@@ -37,9 +37,8 @@
          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
             <div class="teacher__details-thumb p-relative w-img pr-30">
                <img src="../../assets/img/teacher/details/teacer-details-1.jpg" alt="">
-               <div class="work_history">이력 사항</div>
+               <div class="work_history"></div>
                <ul class="work_history_detail">
-                  <li v-for="history of historyInfo" :key="history">{{ history.academyName }} {{ history.startDateYear }}.{{ history.startDateMonth }} ~ {{ history.endDateYear }}.{{ history.endDateMonth }}</li>
                </ul>
             </div>
          </div>
@@ -82,22 +81,9 @@
                   </div>
                </div>
             </div>
-            <div class="teacher__bio">
-              <h3>강사 소개</h3>
-              <p>
-                Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey guvnor in
-                my flat, up the duff Eaton car boot up the kyver pardon you A bit of how's your
-                father David skive off sloshed, don't get shirty with me chip shop vagabond crikey
-                bugger Queen's English chap. (강사 소개 내용)
-              </p>
-            </div>
             <h3 class="mt-30">이력 사항</h3>
             <ul class="work_history_detail">
-              <li>임채오 수학학원 2020.01.01 ~ 2021.01.01</li>
-              <li>임채오 과학학원 2020.12.31 ~ 2021.12.31</li>
-              <li>임채오 영어학원 2022.12.01 ~ 2022.12.31</li>
-              <li>임채오 사회학원 2020.01.01 ~ 2023.01.01</li>
-              <li>임채오 컴퓨터학원 2020.07.01 ~ 2022.0101</li>
+              <li v-for="history of historyInfo" :key="history">{{ history.academyName }} {{ history.startDateYear }}.{{ history.startDateMonth }} ~ {{ history.endDateYear }}.{{ history.endDateMonth }}</li>
             </ul>
           </div>
         </div>
@@ -113,6 +99,7 @@ import { ref, onBeforeMount } from 'vue'
 export default {
   name:'TeacherDetail',
   setup() {
+    const isSticky = ref('false')
     const store = useStore()
     const router = useRouter()
     const route = useRoute()
@@ -206,7 +193,7 @@ export default {
         }
       }
     }
-
+    
     onBeforeMount(() => {
       getUser()
     })
@@ -221,7 +208,8 @@ export default {
       teacherInfo,
       historyInfo,
       tempList,
-      academyInfo
+      academyInfo,
+      isSticky
 
     }
   }
